@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>403 - Access Denied</title>
+</head>
+<body>
+<h1 style="color: red;">HTTP Status 403 - Forbidden</h1>
+<h2>Access is Denied</h2>
+
+<p>
+    You do not have the required permissions (roles) to view this page.
+</p>
+
+<p>Please check your user role or contact an administrator.</p>
+
+<p><a th:href="@{/}">Go to Home Page</a></p>
+</body>
+</html>
