@@ -21,10 +21,10 @@ public class ProductController {
         this.productRepository = productRepository;
         this.currencyService = currencyService;
     }
-    @GetMapping("/")
-    public String index() {
-        return "login";
-    }
+//    @GetMapping("/")
+//    public String index() {
+//        return "login";
+//    }
     @GetMapping("/products")
     public String listProducts(@RequestParam(required = false, defaultValue = "USD") String currency, Model model) {
 

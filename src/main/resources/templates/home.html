@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>SecureShop Home</title>
+</head>
+<body>
+<h1>Welcome to the Protected SecureShop Dashboard!</h1>
+
+<p>You are authenticated as: <span sec:authentication="name"></span></p>
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Log Out</button>
+</form>
+
+<hr/>
+<p>This is a protected page. You can only view it after successful login.</p>
+
+</body>
+</html>
