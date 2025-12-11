@@ -34,6 +34,7 @@ public class NotificationService {
 
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
+            System.out.println("ERROR: Async Email sent to " + toEmail);
         } catch (Exception e) {
             System.err.println("ERROR sending email: " + e.getMessage());
         }

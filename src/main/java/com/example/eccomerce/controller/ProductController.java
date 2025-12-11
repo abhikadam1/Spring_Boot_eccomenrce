@@ -27,7 +27,7 @@ public class ProductController {
 //    }
     @GetMapping("/products")
     public String listProducts(@RequestParam(required = false, defaultValue = "USD") String currency, Model model) {
-
+        System.out.println("INFO: Getting all products for currency: " + currency);
         List<Product> products = productRepository.findAll();
         double rate = currencyService.getRate(currency);
 
@@ -37,6 +37,7 @@ public class ProductController {
                 .map(product -> {
                     double convertedPrice = product.getPriceUsd() * rate;
                     return new ProductDto(
+                            product.getId(),
                             product.getName(),
                             String.format("%.2f %s", convertedPrice, currency) // Format output string
                     );
@@ -50,5 +51,5 @@ public class ProductController {
     }
 
     // Simple DTO for displaying converted data
-    private record ProductDto(String name, String price){}
+    private record ProductDto(Long id, String name, String price){}
 }

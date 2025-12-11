@@ -14,6 +14,7 @@ public class CurrencyService {
         rates.put("EUR", 0.92);
         rates.put("GBP", 0.79);
         rates.put("INR", 83.50);
+        rates.put("USD", 100.00);
         System.out.println("CurrencyService initialized with default rates.");
     }
 
