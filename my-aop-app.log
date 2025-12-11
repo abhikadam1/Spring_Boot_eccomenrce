@@ -2207,3 +2207,8 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
 2025-12-11T00:24:48.730+05:30 DEBUG 15344 --- [eccomerce] [http-nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-11T00:24:48.730+05:30 DEBUG 15344 --- [eccomerce] [http-nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /login
 2025-12-11T00:24:48.746+05:30 DEBUG 15344 --- [eccomerce] [http-nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-11T00:27:05.193+05:30  INFO 15344 --- [eccomerce] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T00:27:05.222+05:30  INFO 15344 --- [eccomerce] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-11T00:27:05.233+05:30  INFO 15344 --- [eccomerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T00:27:05.241+05:30  INFO 15344 --- [eccomerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-11T00:27:05.261+05:30  INFO 15344 --- [eccomerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
