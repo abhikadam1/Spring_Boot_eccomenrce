@@ -57,7 +57,7 @@ public class SecurityConfig {
                 .formLogin(form -> form
                         .loginPage("/login")        // Tells Spring Security where the custom login form is
                         .loginProcessingUrl("/login") // The default URL for form submission (POST)
-                        .defaultSuccessUrl("/", true) // Redirect to home page after success
+                        .defaultSuccessUrl("/home", true) // Redirect to home page after success
                         .failureUrl("/login?error") // Redirect back to login on failure
                 )
 
@@ -94,7 +94,7 @@ public class SecurityConfig {
 //                )
 //                .formLogin(form -> form
 //                        .loginPage("/login")
-////                        .permitAll()
+//                        .permitAll()
 //                        .defaultSuccessUrl("/", true)
 //                )
 //                .logout(logout -> logout
